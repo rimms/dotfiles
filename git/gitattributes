@@ -1,0 +1,11 @@
+*.c diff=cpp
+*.h diff=cpp
+*.cpp diff=cpp
+*.hpp diff=cpp
+*.java diff=java
+*.html diff=html
+*.py diff=python
+*.rb diff=ruby
+*.doc* diff=ms-office
+*.xls* diff=ms-office
+*.ppt* diff=ms-office

@@ -1,0 +1,44 @@
+[user]
+	name = IMAMASU Ryohei
+	email = imms.ryohei@gmail.com
+
+[core]
+	attributesfile = ~/.gitattributes
+	editor = vim -c \"set fenc=utf-8\"
+	excludesfile = ~/.gitignore
+	ignorecase = false
+	pager = less -R
+	precomposeunicode = true
+	quotepath = false
+
+[color]
+	ui = true
+
+[diff]
+	compactionHeuristic = true
+
+[diff "ms-office"]
+	binary = true
+	textconv = tika --text
+
+[alias]
+	br = branch
+	ba = branch --all
+	co = checkout
+	cm = commit
+	df = diff
+	dn = diff --name-only
+	ds = diff --stat
+	fa = fetch --all
+	full-log = log --pretty=fuller
+	graph = log --graph --all --date=iso --pretty='format:%C(yellow)%h%C(reset) %C(green bold)%d%C(reset) [%ad] %s %C(blue)%an%C(reset)'
+	gr = log --graph --all --date=iso --pretty='format:%C(yellow)%h%C(reset) %C(green bold)%d%C(reset) [%ad] %s %C(blue)%an%C(reset)'
+	pl = pull
+	ps = push
+	st = status
+
+[help]
+	autocorrect = 1
+
+[credential]
+	helper = cache --timeout=10800

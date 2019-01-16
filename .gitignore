@@ -1,0 +1,4 @@
+.zcompdump
+zsh.local/*
+sshconfig
+wgetrc

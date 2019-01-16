@@ -1,0 +1,104 @@
+"
+" Vim Settings
+"
+
+call plug#begin('~/.vim/plugged')
+Plug 'airblade/vim-gitgutter'
+Plug 'bronson/vim-trailing-whitespace'
+Plug 'dhruvasagar/vim-table-mode'
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'ryanoasis/vim-devicons'
+Plug 'scrooloose/nerdtree'
+Plug 'thinca/vim-quickrun'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'tomtom/tcomment_vim'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-syntastic/syntastic'
+call plug#end()
+
+" Encoding
+set encoding=utf-8
+set fileencodings=utf-8,cp932,latin1
+set fileformats=unix,mac,dos
+
+" View
+color dracula
+set cursorline
+set list
+set listchars=tab:>.,trail:_,extends:$,precedes:$
+set number
+set ruler
+set showmatch
+highlight CursorLine cterm=none ctermbg=black
+
+" Search
+set hlsearch
+set ignorecase
+set incsearch
+set wrapscan
+nnoremap <ESC><ESC> :noh<CR>
+
+" Disable beep
+set noerrorbells
+set visualbell t_vb=
+
+" Indent
+set autoindent
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
+let g:indent_guides_auto_colors = 0
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
+let g:indent_guides_guide_size = 1
+autocmd VimEnter,Colorscheme * :highlight SpecialKey ctermfg=244
+autocmd VimEnter,Colorscheme * :highlight IndentGuidesOdd ctermbg=235 ctermfg=244
+autocmd VimEnter,Colorscheme * :highlight IndentGuidesEven ctermbg=235 ctermfg=244
+
+" Syntax highlight
+syntax on
+
+" Syntax check
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Remove tailing whitespace on save file
+autocmd BufWritePre * :FixWhitespace
+
+" Side Bar
+map <C-n> :NERDTreeToggle<CR>
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+let g:DevIconsEnableFoldersOpenClose = 1
+let g:NERDTreeDirArrows = 1
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+let g:NERDTreeExactMatchHighlightFullName = 1
+let g:NERDTreeFileExtensionHighlightFullName = 1
+let g:NERDTreeIgnore = ['.swp$']
+let g:NERDTreeNodeDelimiter = "\u00a0"  " See. https://github.com/scrooloose/nerdtree/issues/928
+let g:NERDTreeShowHidden = 1
+let g:NERDTreeWinSize=35
+let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+
+" Status Bar
+set laststatus=2
+let g:airline_powerline_fonts = 1
+
+" Miscellaneous
+set ambiwidth=single
+set history=50
+set nowritebackup
+set nobackup
+set showcmd
+set virtualedit+=block
+set wildmenu

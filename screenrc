@@ -1,0 +1,24 @@
+#
+# Screen Setting
+#
+
+defutf8 on
+defencoding utf8
+encoding utf8 utf8
+
+startup_message off
+vbell off
+
+escape ^Z^z
+
+defscrollback 10000
+termcapinfo xterm* ti@:te@
+
+altscreen on
+
+defbce on
+term xterm-256color
+
+autodetach on
+
+hardstatus alwayslastline "[%02c] %`%-w%{=b bw}%n %t%{-}%+w"

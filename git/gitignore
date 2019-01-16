@@ -1,0 +1,110 @@
+# Global
+*.log
+*bak
+*backup
+*org
+*orig
+*tmp
+*temp
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.python-version
+
+# Ansible
+*.retry
+
+# LibreOffice Locks
+.~lock.*#
+
+# Vim Swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Vim Session
+Session.vim
+
+# Vim Temporary
+.netrwhist
+*~
+
+# MS Word Temporary
+~$*.doc*
+
+# MS Word Auto Backup File
+Backup of *.doc*
+
+# MS Excel Temporary
+~$*.xls*
+
+# MS Excel Backup File
+*.xlk
+
+# MS PowerPoint Temporary
+~$*.ppt*
+
+# Byte-compiled Python Files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python Distribution
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Python Unit Test / Coverage Reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Compiled Object Files
+*.elf
+*.ko
+*.lo
+*.o
+*.obj
+*.slo
+
+# Compiled Dynamic Libraries
+*.dll
+*.dylib
+*.so
+*.so.*
+
+# Compiled Static Libraries
+*.a
+*.lai
+*.la
+*.lib
+
+# Executables
+*.app
+*.exe
+*.exe~
+*.out
+*.i*86
+*.x86_64
