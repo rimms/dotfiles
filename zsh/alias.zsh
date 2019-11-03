@@ -5,6 +5,7 @@
 case "${OSTYPE}" in
     darwin*)
         alias ls='ls -G'
+        alias tree='tree -N'
         ;;
     *)
         alias ls='ls --color=auto'
