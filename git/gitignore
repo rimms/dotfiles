@@ -2,7 +2,6 @@
 *.log
 *bak
 *backup
-*org
 *orig
 *tmp
 *temp
@@ -80,31 +79,3 @@ coverage.xml
 *.cover
 .hypothesis/
 .pytest_cache/
-
-# Compiled Object Files
-*.elf
-*.ko
-*.lo
-*.o
-*.obj
-*.slo
-
-# Compiled Dynamic Libraries
-*.dll
-*.dylib
-*.so
-*.so.*
-
-# Compiled Static Libraries
-*.a
-*.lai
-*.la
-*.lib
-
-# Executables
-*.app
-*.exe
-*.exe~
-*.out
-*.i*86
-*.x86_64
