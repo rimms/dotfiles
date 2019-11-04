@@ -96,6 +96,7 @@ let g:airline_powerline_fonts = 1
 
 " Miscellaneous
 set ambiwidth=single
+set clipboard+=unnamed
 set history=50
 set nowritebackup
 set nobackup
